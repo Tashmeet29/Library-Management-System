@@ -11,3 +11,9 @@ class Library:
                 self.books.remove(book)  # Remove the borrowed book from available books
                 return "Borrowed"
         return "Book not available"
+
+    def return_book(self, book):
+            self.books.append(book)  # Add the book back to available books
+
+    def view_books(self):
+        return self.books  # Return list of available books
